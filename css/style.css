@@ -392,3 +392,11 @@ p.precios {
     margin-top: -15px;
     font-size: 14px;
 }
+input.button.savepro {
+    background: #777777;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #34d03f;
+    text-shadow: none !important;
+}
