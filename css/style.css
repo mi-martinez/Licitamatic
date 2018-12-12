@@ -1,0 +1,394 @@
+body {
+    background-color: #efefef;
+    padding-left: 50px !important;
+}
+nav.menu-nav {
+    width: 54px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background: #f5f5f5;
+    box-shadow: 5px 0px 50px #00000036;
+    z-index: 100;
+}
+.branding{
+    position: relative;
+    width: 70px;
+    top: 6px;
+    left: 5px;
+    margin-bottom: 10px;
+}
+nav.menu-nav li span {
+    display: none;
+}
+nav.menu-nav li {
+    height: 50px;
+    display: block;
+    background: linear-gradient(180deg, #EEEEEE 0%, rgba(187, 187, 187, 0.15) 86.32%);
+    transition: 0.3s;
+    width: 48px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.item-menu-10 a{
+    background: url('../images/XMLID-680.png');
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center center;
+}
+.item-menu-11 a{
+    background: url('../images/XMLID-1296.1.png');
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center center;
+}
+.item-menu-12 a{
+    background: url('../images/licitaciones.png');
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center center;
+}
+.item-menu-13 a{
+    background: url('../images/XMLID-1207.png');
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center center;
+}
+.item-menu-14 a{
+    background: url('../images/down.png');
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center center;
+}
+nav.superior {
+    background: #eaeaea;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 99;
+    box-shadow: 0px 0px 10px #00000047;
+}
+nav.superior div{
+    display: flex;
+}
+a.denunciar {
+    background: #debfa9;
+    font-size: 13px;
+    padding: 6px 20px;
+    text-decoration: none;
+    color: #a2490a;
+    font-weight: 500;
+}
+img.imgprofile {
+    position: absolute;
+    width: 36px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: -42px;
+}
+.usuario {
+    width: 250px;
+    color: #e86200;
+    padding-left: 50px;
+}
+.usuario p:nth-child(2) {
+    font-size: 12px;
+    color: #867d5b;
+    padding-right: 10px;
+}
+.usuario p:nth-child(3) {
+    font-weight: 600;
+    font-size: 18px;
+}
+a.button.csesion {
+    background: #e86000;
+    color: #fff;
+    font-weight: 500;
+    margin-right: 11px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: 2px solid #88491c;
+}
+.alertas {
+    margin-right: 130px;
+}
+h1.title span{
+    font-weight: 700;
+    color: #e86000;
+}
+.gap {
+    height: 40px;
+}
+.gap20 {
+    height: 20px;
+}
+.hero-body {
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(top, #f9f9f9 0%, #efefef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f9f9f9 0%,#efefef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f9f9f9 0%,#efefef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#efefef',GradientType=0 );
+}
+h1.title {
+    color: #676767 !important;
+}
+p.subtitle {
+    color: #717171 !important;
+    font-size: 14px;
+}
+.columns h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #d05600;
+}
+.fieldsa .column {
+    margin: 0px 5px;
+}
+.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus {
+    border-color: #e86000 !important;
+    box-shadow: 0 0 0 0.125em rgb(255, 202, 132) !important;
+}
+select, .select {
+    width: 100%;
+}
+.infopanel p {
+    font-size: 12px;
+    color: #949494;
+    text-align: center;
+    padding: 5px 15px;
+}
+.infopanel img {
+    padding: 10px 10px;
+}
+hr {
+    background-color: #d6d6d6 !important;
+}
+.envio {
+    text-align: center;
+    padding-top: 15px;
+}
+.enviol {
+    padding-top: 15px;
+}
+input.button.save {
+    background: #09c16c;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0px 2px 8px #006335;
+}
+.columns.pasos {
+    color: #8e8e8e;
+    margin-top: 15px;
+}
+.pasos .column {
+    padding: 0px !important;
+}
+.columns.pasos p {
+    text-align: center;
+    margin-bottom: -19px;
+    font-size: 12px;
+}
+.column.pasoactivo p {
+    font-weight: 700;
+    background: #9a9a9a;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-top: 18px;
+    border: 2px solid #7b7b7b;
+    color: #fff;
+    margin-top: -8px;
+}
+.column.pasoactivo {
+    margin-top: -1px;
+}
+.loginreg input {
+    margin-bottom: 15px;
+    max-width: 390px;
+}
+.column.login {
+    border-right: 1px solid #e4e4e4;
+}
+.file.is-boxed .file-label {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.file.is-boxed.has-name .file-name {
+    text-align: center;
+    max-width: 100% !important;
+}
+.file.is-boxed .file-label {
+    max-width: 276px;
+}
+.column.card.infopanel {
+    display: inline-table;
+}
+input.input.input-filea {
+    font-size: 11px;
+    margin: 8px;
+    width: calc(100% - 16px);
+    text-align: center;
+}
+span.iconmas {
+    font-size: 60px;
+    text-align: center;
+    margin-left: calc(50% - 34px);
+    color: #b7b7b76e;
+}
+.btngz {
+    color: #949494 !important;
+    margin-left: 12px;
+    vertical-align: sub;
+    font-size: 15px;
+}
+ .btngz:hover{
+    color: #000 !important;
+ }
+ #modalContent {
+    position: absolute;
+    top: 26%;
+    right: 0%;
+    z-index: 6;
+    margin: -2% 0px 0px -150px;
+    float: left;
+    width: 80%;
+    color: #000;
+    line-height: 22px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #9a3a3a00;
+}
+ /* ... los estilos de la ventana central ... */
+ #modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    float: left;
+    width: calc(50% - -24px);
+    height: 100%;
+    background: #fff;
+    display: none;
+    opacity: 0;
+    -webkit-transition-property: height, width, background-color,;
+-webkit-transition-duration: 5s;
+-webkit-transition-timing-function:ease-out;
+}
+ /* ... y un ‹a› transparente que ocupa todo el espacio para poder cerrar la modal desde cualquier punto */
+ #modal > a{
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:1;
+    float:left;
+    width:100%;
+    height:100%;
+ }
+ /*El elemento clave, le decimos que cualquier elemento susceptible de absorver esta propiedad, se muestre, o lo que es lo mismo, cuando pulsemos el botón, se ejecutará :target y nos mostrará la modal */
+ #modal:target{
+    display:block!important;
+    opacity:1!important;
+ }
+ #modalContent > a {
+    position: absolute;
+    top: calc(50% - 50px);
+    right: -20px;
+    color: #ffffff;
+    background: #e86200;
+    padding-top: 6px;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 35px;
+}
+input.button.register {
+    background: #777777;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.pagination-link.is-current {
+    background-color: #737373 !important;
+    border-color: #5f5f5f !important;
+    color: #fff !important;
+}
+.image.logop {
+    width: 100px;
+}
+p.titulobox {
+    margin-top: -12px;
+    font-size: 12px;
+    text-transform: lowercase !important;
+    color: #777;
+    padding-left: 24px;
+    border-left: 2px solid #e8e8e8;
+}
+.titulobox strong {
+    color: #e86000;
+    text-transform: capitalize !important;
+}
+p.entidad {
+    padding-left: 25px;
+}
+.list-licitaciones .box {
+    border-left: 5px solid #34d03f;
+}
+p.numproces {
+    background: #e8e8e8;
+    text-align: center;
+    font-weight: 800;
+    margin-top: -21px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 4px;
+    border: 1px solid #c4c4c4;
+}
+.acctions {
+    text-align: right;
+}
+a.button.is-small.detalles {
+    background: #efefef;
+    margin-bottom: 10px;
+}
+a.button.is-small.enlace {
+    background: #34d03f;
+    color: #fff;
+    border: 2px solid #1cab26;
+    margin-right: 4px;
+    width: 66px;
+}
+p.faseproc {
+    padding-left: 25px;
+    border-top: 2px solid #e8e8e8;
+    padding-top: 8px;
+}
+p.faseproc strong {
+    color: #0a8412;
+}
+p.faseproc span, p.precios span {
+    padding-left: 25px;
+}
+p.precios {
+    padding-left: 25px;
+    margin-bottom: -15px;
+    margin-top: -15px;
+    font-size: 14px;
+}

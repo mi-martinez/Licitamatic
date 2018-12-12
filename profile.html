@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Licitamatic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+
+    <!-- Menu LICITAMATIC -->
+
+    <header class="menu-lateral">
+      <nav class="menu-nav">
+        <div class="branding">
+          <img src="./images/LM.png">
+        </div>
+        <ul>
+          <li class="item-menu-10"><a href="#"><span>DashBoard</span></a></li>
+          <li class="item-menu-11"><a href="#"><span>Perfil de la Empresa</span></a></li>
+          <li class="item-menu-12"><a href="#"><span>Documentos de la Empresa</span></a></li>
+          <li class="item-menu-13"><a href="#"><span>Licitaciones Disponibles</span></a></li>
+          <li class="item-menu-14"><a href="#"><span>Generador de licitaciones</span></a></li>
+        </ul>
+      </nav>
+      <nav class="superior level-right">
+        <a class="denunciar" href="">¿Quieres denunciar un caso de corrupción?</a>
+          <div>
+            <div class="usuario">
+              <img src="./images/man.png" alt="imagen-profile" class="imgprofile">
+              <p>Hola:</p>
+              <p>Nicolas P.</p>
+            </div>
+            <div class="alertas">
+             <!-- <a class="alerta red gray" href="#">0</a> --> 
+            </div>
+              <a href="#" class="button csesion">Cerrar Sesión</a>
+          </div>
+      </nav>
+    </header>
+
+
+
+    <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+              <div class="gap"></div>   
+              
+              <div class="columns">
+                  <div class="column">
+                                  <h1 class="title">
+                                  Bienvenido a <span>Licitamatic</span>
+                                </h1>
+                            <p class="subtitle">
+                              Licitamatic necesita conocer tu empresa para ayudarte a aplicar a una licitación. Adelante…
+                            </p>
+                  </div>
+                  <div class="column"> 
+                    <!--Pasos-->
+                    <div class="columns pasos">
+                      <div class="column"></div>
+                      <div class="column pasoactivo"><p>Paso <span> 1</span> </p><hr></div>
+                      <div class="column paso02"><p>Paso <span> 2</span> </p><hr></div>
+                      <div class="column paso03"><p>Paso <span> 3</span> </p><hr></div>
+                      <div class="column paso04"><p>Paso <span> 4</span> </p><hr></div>
+                      <div class="column paso05"><p>Paso <span> 5</span> </p><hr></div>
+                    </div>
+                  </div>    
+              </div>
+              
+          </div>
+        </div>
+      </section>
+  <section class="section">
+    <div class="container">
+      
+        <div class="columns fieldsa">
+            <div class="column is-four-fifths">
+              <h2>Información básica de la empresa.</h2>
+              <p>Complete los siguientes campos para determinar el perfil de su empresa: </p>
+              <div class="gap20"></div>  
+              <div class="columns">
+                  <div class="column">
+                      <input class="input" type="text" placeholder="Nombre de la empresa">
+                  </div>
+                  <div class="column">
+                      <input class="input" type="text" placeholder="NIT">
+                  </div>
+                  <div class="column">
+                      <div class="select">
+                          <select>
+                            <option>Tipo de sociedad</option>
+                            <option>S.A.S</option>
+                            <option>S.A</option>
+                            <option>LTDA</option>
+                            <option>S.C.A</option>
+                            <option>Unión Temporal</option>
+                          </select>
+                        </div>
+                  </div>
+              </div>
+              <hr>
+              <h2>Actividades econocimicas.</h2>
+              <p>Ingrese los códigos de CIUU o Actividades economicas de la empresa: </p>
+              <div class="gap20"></div> 
+              <div class="columns">
+                  <div class="column">
+                      <input class="input" type="text" placeholder="CIUU">
+                  </div>
+                  <div class="column">
+                      <input class="input" type="text" placeholder="CIUU">
+                  </div>
+                  <div class="column">
+                      <input class="input" type="text" placeholder="CIUU">
+                  </div>
+                  <div class="column">
+                      <input class="input" type="text" placeholder="CIUU">
+                  </div>
+                  <div class="column">
+                      <input class="input" type="text" placeholder="CIUU">
+                  </div>
+                  
+              </div>
+
+              
+            </div>
+            
+            <div class="column card infopanel">
+              <img src="./images/gente.png" alt="">
+              <p>Al completar los campos Licitamatic encontrara licitaciones útiles y accesibles para que tu empresa pueda participas en los procesos con diferentes entidades fácilmente.</p>
+            </div>
+        </div>
+        <div class="column is-four-fifths">
+            <div class="envio">
+                <input class="button save" type="submit" value="Guardar información">
+            </div>
+        </div>
+
+    </div>
+
+  </section>
+  </body>
+</html>

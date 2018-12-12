@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Licitamatic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+
+    <!-- Menu LICITAMATIC -->
+
+    <header class="menu-lateral">
+      <nav class="menu-nav">
+        <div class="branding">
+          <img src="./images/LM.png">
+        </div>
+        <ul>
+          <li class="item-menu-10"><a href="#"><span>DashBoard</span></a></li>
+          <li class="item-menu-11"><a href="#"><span>Perfil de la Empresa</span></a></li>
+          <li class="item-menu-12"><a href="#"><span>Documentos de la Empresa</span></a></li>
+          <li class="item-menu-13"><a href="#"><span>Licitaciones Disponibles</span></a></li>
+          <li class="item-menu-14"><a href="#"><span>Generador de licitaciones</span></a></li>
+        </ul>
+      </nav>
+      <nav class="superior level-right">
+        <a class="denunciar" href="">¿Quieres denunciar un caso de corrupción?</a>
+          <div>
+            <div class="usuario">
+              <img src="./images/man.png" alt="imagen-profile" class="imgprofile">
+              <p>Hola:</p>
+              <p>Nicolas P.</p>
+            </div>
+            <div class="alertas">
+             <!-- <a class="alerta red gray" href="#">0</a> --> 
+            </div>
+              <a href="#" class="button csesion">Cerrar Sesión</a>
+          </div>
+      </nav>
+    </header>
+
+
+
+    <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+              <div class="gap"></div>   
+              
+              <div class="columns">
+                  <div class="column">
+                                  <h1 class="title">
+                                  Documentos <span>$NombreDeLaEmpresa</span>
+                                </h1>
+                            <p class="subtitle">
+                                Tu empresa necesita subir la siguiente documentación como requisito mínimo para participar en cualquier proceso. A subir…
+                            </p>
+                  </div>
+                  <div class="column"> 
+                    <!--Pasos-->
+                    <div class="columns pasos">
+                      <div class="column"></div>
+                      <div class="column paso01"><p>Paso <span> 1</span> </p><hr></div>
+                      <div class="column pasoactivo"><p>Paso <span> 2</span> </p><hr></div>
+                      <div class="column paso03"><p>Paso <span> 3</span> </p><hr></div>
+                      <div class="column paso04"><p>Paso <span> 4</span> </p><hr></div>
+                      <div class="column paso05"><p>Paso <span> 5</span> </p><hr></div>
+                    </div>
+                  </div>    
+              </div>
+              
+          </div>
+        </div>
+      </section>
+  <section class="section">
+    <div class="container">
+      
+        <div class="columns fieldsa">
+            <div class="column is-four-fifths">
+              <h2>Documentos mínimos necesarios.</h2>
+              <p>Para participar en cualquier proceso de licitaciones debe cargar la siguiente documentación:</p>
+              <div class="gap20"></div> 
+
+              <div class="columns">
+                  <div class="column">
+                    <!---Upload File-->
+                      <div class="field">
+                          <div class="file is-small is-boxed has-name">
+                            <label class="file-label">
+                              <input class="file-input" type="file" name="resume">
+                              <span class="file-cta">
+                                <span class="file-icon">
+                                  <i class="fas fa-upload"></i>
+                                </span>
+                                <span class="file-label">
+                                  Camara de Comercio
+                                </span>
+                              </span>
+                              <span class="file-name">
+                                  camara-de-comercio.pdf
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                    <!--End-file-->    
+                  </div>
+                  <div class="column">
+                    <!---Upload File-->
+                    <div class="field">
+                        <div class="file is-small is-boxed has-name">
+                          <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                              <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                              </span>
+                              <span class="file-label">
+                                RUT
+                              </span>
+                            </span>
+                            <span class="file-name">
+                                rut.pdf
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                  <!--End-file-->    
+                  </div>
+                  <div class="column">
+                    <!---Upload File-->
+                    <div class="field">
+                        <div class="file is-small is-boxed has-name">
+                          <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                              <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                              </span>
+                              <span class="file-label">
+                                Registro único de proponentes RUP
+                              </span>
+                            </span>
+                            <span class="file-name">
+                                registro-unico-de-proponentes.pdf
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                  <!--End-file-->    
+                  </div>
+              </div>
+
+              <div class="columns">
+                  <div class="column">
+                    <!---Upload File-->
+                      <div class="field">
+                          <div class="file is-small is-boxed has-name">
+                            <label class="file-label">
+                              <input class="file-input" type="file" name="resume">
+                              <span class="file-cta">
+                                <span class="file-icon">
+                                  <i class="fas fa-upload"></i>
+                                </span>
+                                <span class="file-label">
+                                    Cédula Representante legal.
+                                </span>
+                              </span>
+                              <span class="file-name">
+                                  cedula.pdf
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                    <!--End-file-->    
+                  </div>
+                  <div class="column">
+                    <!---Upload File-->
+                    <div class="field">
+                        <div class="file is-small is-boxed has-name">
+                          <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                              <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                              </span>
+                              <span class="file-label">
+                                 Certificado de existencia y representación legal.
+                              </span>
+                            </span>
+                            <span class="file-name">
+                                certificado-de-existencia.pdf
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                  <!--End-file-->    
+                  </div>
+                  <div class="column">
+                    <!---Upload File-->
+                    <div class="field">
+                        <div class="file is-small is-boxed has-name">
+                          <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                              <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                              </span>
+                              <span class="file-label">
+                                  Certificado de pago de aportes a la seguridad social.
+                              </span>
+                            </span>
+                            <span class="file-name">
+                                certificado-de-pago-aportes.pdf
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                  <!--End-file-->    
+                  </div>
+              </div>
+
+              <div class="columns">
+                  <div class="column">
+                    <!---Upload File-->
+                      <div class="field">
+                          <div class="file is-small is-boxed has-name">
+                            <label class="file-label">
+                              <input class="file-input" type="file" name="resume">
+                              <span class="file-cta">
+                                <span class="file-icon">
+                                  <i class="fas fa-upload"></i>
+                                </span>
+                                <span class="file-label">
+                                    Autorización y facultades para contratar.
+                                </span>
+                              </span>
+                              <span class="file-name">
+                                  facultades.pdf
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                    <!--End-file-->    
+                  </div>
+                  <div class="column">
+                    <!---Upload File-->
+                    <div class="field">
+                        <div class="file is-small is-boxed has-name">
+                          <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                              <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                              </span>
+                              <span class="file-label">
+                                  Antecedentes de Procuraduría, Contraloría y Policía Nacional.
+                              </span>
+                            </span>
+                            <span class="file-name">
+                                polcia-contraloria.pdf
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                  <!--End-file-->    
+                  </div>
+                  <div class="column">
+                    <!---Upload File-->
+                    <div class="field">
+                        <div class="file is-small is-boxed has-name">
+                          <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                              <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                              </span>
+                              <span class="file-label">
+                                  Estatutos o documento de conformación
+                              </span>
+                            </span>
+                            <span class="file-name">
+                                estatutos-o-documentos.pdf
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                  <!--End-file-->    
+                  </div>
+              </div>
+
+              <div class="columns">
+                  <div class="column">
+                    <!---Upload File-->
+                      <div class="field">
+                          <div class="file is-small is-boxed has-name">
+                            <label class="file-label">
+                              <input class="file-input" type="file" name="resume">
+                              <span class="file-cta">
+                                <span class="file-icon">
+                                  <i class="fas fa-upload"></i>
+                                </span>
+                                <span class="file-label">
+                                  Estados Financieros ultimos 2 años
+                                </span>
+                              </span>
+                              <span class="file-name">
+                                  estados-financieros.pdf
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                    <!--End-file-->    
+                  </div>
+                  <div class="column">
+                    <!---Upload File-->
+                    <div class="field">
+                        <div class="file is-small is-boxed has-name">
+                          <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                              <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                              </span>
+                              <span class="file-label">
+                                  Certificación experiencia mínima.
+                              </span>
+                            </span>
+                            <span class="file-name">
+                                experiencia-minima.pdf
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                  <!--End-file-->    
+                  </div>
+                  <div class="column">
+
+                  </div>
+              </div>
+
+              <hr>
+              <h2>Otros Documentos.</h2>
+              <p>Adjunta archivos a tu biblioteca para solicitudes especiales. </p>
+              <div class="gap20"></div> 
+              <div class="columns">
+                  <div class="column">
+                      <!---Upload File-->
+                      <div class="field">
+                          <div class="file is-small is-boxed has-name">
+                            <label class="file-label">
+                              <input class="file-input" type="file" name="resume">
+                              <span class="file-cta">
+                                <span class="file-icon">
+                                  <i class="fas fa-upload"></i>
+                                </span>
+                                <span class="file-label">
+                                    Oferta economica TIC
+                                </span>
+                              </span>
+                              <span class="file-name-input">
+                                  <input class="input input-filea" type="text" placeholder="Nombre del Documento">
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                    <!--End-file-->   
+                  </div>
+                  <div class="column">
+                    <a href="#" class="addfile">
+                        <span class="iconmas">
+                            <i class="far fa-plus-square"></i>
+                            </span>
+                    </a>
+                  </div>
+                  <div class="column">
+
+                  </div>
+                  
+              </div>
+
+              
+            </div>
+            
+            <div class="column card infopanel">
+              <img src="./images/gente-2.png" alt="">
+              <p>Completa los documentos Licitamatic se encargara de buscar para tu empresa licitaciones en las que podrás participar y generar mayores posibilidades de éxito.</p>
+            </div>
+        </div>
+        <div class="column is-four-fifths">
+            <div class="envio">
+                <input class="button save" type="submit" value="Guardar información">
+            </div>
+        </div>
+
+    </div>
+
+  </section>
+  </body>
+</html>
