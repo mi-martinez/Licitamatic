@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Licitamatic</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bulma-extensions/bulma-slider/dist/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./node_modules/bulma-extensions/bulma-slider/dist/css/bulma-slider.sass">
+
+    <link rel="stylesheet" href="./node_modules/bulma-extensions/bulma-slider/src/js/index.js">
+    <link rel="stylesheet" href="./node_modules/bulma-extensions/bulma-slider/dist/js/bulma-slider.min.js">
+    <link rel="stylesheet" href="./node_modules/bulma-extensions/bulma-slider/dist/js/bulma-slider.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
@@ -83,12 +89,15 @@
               <div class="gap20"></div>  
               <div class="columns">
                   <div class="column">
+                      <label class="label">Nombre de la empresa.</label>
                       <input class="input" type="text" placeholder="Nombre de la empresa">
                   </div>
                   <div class="column">
+                      <label class="label">NIT</label>
                       <input class="input" type="text" placeholder="NIT">
                   </div>
                   <div class="column">
+                      <label class="label">Tipo de Sociedad</label>
                       <div class="select">
                           <select>
                             <option>Tipo de sociedad</option>
@@ -101,6 +110,122 @@
                         </div>
                   </div>
               </div>
+
+
+              <div class="columns">
+                <div class="column">
+                    <label class="label">Nombre y Apellidos Representante Legal</label>
+                    <input class="input" type="text" placeholder="Nombre representante legal">
+                </div>
+                <div class="column">
+                    <label class="label">Cedula o Numero de Identificación</label>
+                    <input class="input" type="text" placeholder="No. Cedula">
+                </div>
+                <div class="column">
+                    <label class="label">Ciudad de la empresa</label>
+                    <div class="select">
+                        <select>
+                          <option>Selecciona una ciudad</option>
+                          <option>Bogotá</option>
+                          <option>Medellin</option>
+                          <option>Villavicencio</option>
+                          <option>Cali</option>
+                          <option>Cartagena</option>
+                        </select>
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="columns">
+                <div class="column">
+                    <label class="label">Teléfono o Celular</label>
+                    <input class="input" type="text" placeholder="Teléfono">
+                </div>
+                <div class="column">
+                    <label class="label">URL o Pagina web</label>
+                    <input class="input" type="text" placeholder="Pagina web">
+                </div>
+                <div class="column">
+                    <label class="label">Fecha de constitución</label>
+                    <input class="input" type="text" placeholder="Fecha de creación">
+                </div>
+            </div>
+            <script type="text/javascript">
+                // Find output DOM associated to the DOM element passed as parameter
+                function findOutputForSlider( element ) {
+                   var idVal = element.id;
+                   outputs = document.getElementsByTagName( 'output' );
+                   for( var i = 0; i < outputs.length; i++ ) {
+                     if ( outputs[ i ].htmlFor == idVal )
+                       return outputs[ i ];
+                   }
+                }
+                
+                function getSliderOutputPosition( slider ) {
+                  // Update output position
+                  var newPlace,
+                      minValue;
+                
+                  var style = window.getComputedStyle( slider, null );
+                  // Measure width of range input
+                  sliderWidth = parseInt( style.getPropertyValue( 'width' ), 1000000 );
+                
+                  // Figure out placement percentage between left and right of input
+                  if ( !slider.getAttribute( 'min' ) ) {
+                    minValue = 0;
+                  } else {
+                    minValue = slider.getAttribute( 'min' );
+                  }
+                  var newPoint = ( slider.value - minValue ) / ( slider.getAttribute( 'max' ) - minValue );
+                
+                  // Prevent bubble from going beyond left or right (unsupported browsers)
+                  if ( newPoint < 0 ) {
+                    newPlace = 0;
+                  } else if ( newPoint > 1 ) {
+                    newPlace = sliderWidth;
+                  } else {
+                    newPlace = sliderWidth * newPoint;
+                  }
+                
+                  return {
+                    'position': newPlace + 'px'
+                  }
+                }
+                
+                document.addEventListener( 'DOMContentLoaded', function () {
+                  // Get all document sliders
+                  var sliders = document.querySelectorAll( 'input[type="range"].slider' );
+                  [].forEach.call( sliders, function ( slider ) {
+                    var output = findOutputForSlider( slider );
+                    if ( output ) {
+                      if ( slider.classList.contains( 'has-output-tooltip' ) ) {
+                        // Get new output position
+                        var newPosition = getSliderOutputPosition( slider );
+                
+                        // Set output position
+                        output.style[ 'left' ] = newPosition.position;
+                      }
+                
+                      // Add event listener to update output when slider value change
+                      slider.addEventListener( 'input', function( event ) {
+                        if ( event.target.classList.contains( 'has-output-tooltip' ) ) {
+                          // Get new output position
+                          var newPosition = getSliderOutputPosition( event.target );
+                
+                          // Set output position
+                          output.style[ 'left' ] = newPosition.position;
+                        }
+                
+                        // Update output with slider value
+                        output.value = event.target.value;
+                      } );
+                    }
+                  } );
+                } );
+            </script>
+            <input id="sliderWithValue" class="slider has-output is-fullwidth" min="5000000" max="100000000000" value="50000000" step="1000000" type="range">
+            <output for="sliderWithValue">50</output>
               <hr>
               <h2>Actividades econocimicas.</h2>
               <p>Ingrese los códigos de CIUU o Actividades economicas de la empresa: </p>

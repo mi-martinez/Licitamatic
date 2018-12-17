@@ -184,7 +184,7 @@ hr {
 .enviol {
     padding-top: 15px;
 }
-input.button.save {
+.button.save {
     background: #09c16c;
     font-size: 16px;
     font-weight: 600;
@@ -261,7 +261,7 @@ span.iconmas {
  .btngz:hover{
     color: #000 !important;
  }
- #modalContent {
+ #modalaContent {
     position: absolute;
     top: 26%;
     right: 0%;
@@ -276,11 +276,11 @@ span.iconmas {
     background: #9a3a3a00;
 }
  /* ... los estilos de la ventana central ... */
- #modal {
+ #modala {
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 5;
+    z-index: 999;
     float: left;
     width: calc(50% - -24px);
     height: 100%;
@@ -292,7 +292,7 @@ span.iconmas {
 -webkit-transition-timing-function:ease-out;
 }
  /* ... y un ‹a› transparente que ocupa todo el espacio para poder cerrar la modal desde cualquier punto */
- #modal > a{
+ #modala > a{
     position:fixed;
     top:0px;
     left:0px;
@@ -302,11 +302,11 @@ span.iconmas {
     height:100%;
  }
  /*El elemento clave, le decimos que cualquier elemento susceptible de absorver esta propiedad, se muestre, o lo que es lo mismo, cuando pulsemos el botón, se ejecutará :target y nos mostrará la modal */
- #modal:target{
-    display:block!important;
-    opacity:1!important;
+ #modala:target{
+    display: block !important;
+    opacity: 1 !important;
  }
- #modalContent > a {
+ #modalaContent > a {
     position: absolute;
     top: calc(50% - 50px);
     right: -20px;
@@ -392,7 +392,7 @@ p.precios {
     margin-top: -15px;
     font-size: 14px;
 }
-input.button.savepro {
+a.button.savepro {
     background: #777777;
     font-size: 16px;
     font-weight: 600;
